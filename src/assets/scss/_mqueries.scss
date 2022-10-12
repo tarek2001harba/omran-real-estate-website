@@ -1,0 +1,6 @@
+@mixin mq($bp) {
+  $breakpoint: $bp;
+  @media only screen and ($breakpoint) {
+    @content;
+  }
+}

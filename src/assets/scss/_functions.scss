@@ -1,0 +1,30 @@
+@use "sass:math";
+@use "sass:string";
+
+@function toRem($value) {
+  $remValue: math.div($value, 16) + rem;
+  @return $remValue;
+}
+
+@function toBreakpoint($brk-type, $brk-value) {
+  $breakpoint-type: "";
+
+  @if $brk-type == "mxw" {
+    $breakpoint-type: "max-width: ";
+  }
+
+  @if $brk-type == "mnw" {
+    $breakpoint-type: "min-width: ";
+  }
+
+  @if $brk-type == "mxh" {
+    $breakpoint-type: "max-height: ";
+  }
+
+  @if $brk-type == "mnh" {
+    $breakpoint-type: "min-height: ";
+  }
+
+  $breakpoint: $breakpoint-type + toRem($brk-value);
+  @return $breakpoint;
+}

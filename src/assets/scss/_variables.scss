@@ -1,0 +1,60 @@
+/*
+    *border-radius values
+*/
+$brad-1: toRem(6);
+$brad-2: 0.5rem;
+$brad-3: 1rem;
+$brad-4: 1.5rem;
+
+/* 
+    *font-size fluid steps 
+*/
+$fs--2: clamp(0.64rem, calc(0.58rem + 0.32vw), 0.96rem);
+$fs--1: clamp(0.8rem, calc(0.72rem + 0.4vw), 1.2rem);
+$fs-0: clamp(1rem, calc(0.9rem + 0.5vw), 1.5rem);
+$fs-1: clamp(1.25rem, calc(1.13rem + 0.63vw), 1.88rem);
+$fs-2: clamp(1.56rem, calc(1.41rem + 0.78vw), 2.34rem);
+$fs-3: clamp(1.95rem, calc(1.76rem + 0.98vw), 2.93rem);
+$fs-4: clamp(2.44rem, calc(2.2rem + 1.22vw), 3.66rem);
+$fs-5: clamp(3.05rem, calc(2.75rem + 1.53vw), 4.58rem);
+
+/*
+    *fluid space steps
+*/
+$sp-3xs: clamp(0.5rem, calc(0.45rem + 0.25vw), 0.75rem);
+$sp-2xs: clamp(0.5rem, calc(0.45rem + 0.25vw), 0.75rem);
+$sp-xs: clamp(0.75rem, calc(0.68rem + 0.38vw), 1.13rem);
+$sp-s: clamp(1rem, calc(0.9rem + 0.5vw), 1.5rem);
+$sp-m: clamp(1.5rem, calc(1.35rem + 0.75vw), 2.25rem);
+$sp-l: clamp(2rem, calc(1.8rem + 1vw), 3rem);
+$sp-xl: clamp(3rem, calc(2.7rem + 1.5vw), 4.5rem);
+$sp-2xl: clamp(4rem, calc(3.6rem + 2vw), 6rem);
+$sp-3xl: clamp(6rem, calc(5.4rem + 3vw), 9rem);
+
+/* 
+    *One-up pairs 
+*/
+$sp-3xs-2xs: clamp(0.5rem, calc(0.45rem + 0.25vw), 0.75rem);
+$sp-2xs-xs: clamp(0.5rem, calc(0.38rem + 0.63vw), 1.13rem);
+$sp-xs-s: clamp(0.75rem, calc(0.6rem + 0.75vw), 1.5rem);
+$sp-s-m: clamp(1rem, calc(0.75rem + 1.25vw), 2.25rem);
+$sp-m-l: clamp(1.5rem, calc(1.2rem + 1.5vw), 3rem);
+$sp-l-xl: clamp(2rem, calc(1.5rem + 2.5vw), 4.5rem);
+$sp-xl-2xl: clamp(3rem, calc(2.4rem + 3vw), 6rem);
+$sp-2xl-3xl: clamp(4rem, calc(3rem + 5vw), 9rem);
+
+/* 
+    *media query breakpoints
+*/
+$bp-mobile-sm: toBreakpoint("mxw", 420);
+$bp-mobile-lg: toBreakpoint("mxw", 650);
+$bp-ipad-lg: toBreakpoint("mxw", 820);
+$bp-laptop-sm: toBreakpoint("mxw", 1060);
+
+// special max-width cases
+$bp-mxw-860: toBreakpoint("mxw", 860);
+$bp-mxw-500: toBreakpoint("mxw", 500);
+$bp-mxw-1220: toBreakpoint("mxw", 1220);
+
+// special min-height cases
+$bp-mnh-900: toBreakpoint("mnh", 900);
